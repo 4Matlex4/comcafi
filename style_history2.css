@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-section { /*главный блок*/
+    padding: 20px;
+    flex: 1;
+}
+
+.content h1 { /*заголовоки*/
+    font-family: Arial Black;
+    font-size: 70px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    color: rgb(0, 41, 68);
+}
+
+.features {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.content ul { /*многоуровневый список*/
+    padding-left: 20px;
+}
+
+.content ul li {
+    font-size: 35px;
+    padding: 5px;
+    color: rgb(0, 41, 68);
+    text-decoration: underline;
+}
+
+.content hr { /*заголовки разделов*/
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: rgb(0, 41, 68);
+    height: 5px;
+    background-color: rgb(0, 41, 68);
+}
+
+.content p { /*текст в разделах*/
+    background-color: rgb(0, 41, 68);
+    font-family: Century Gothic;
+    font-size: 35px;
+    padding: 5px;
+    text-indent: 1em;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.content img { /*картинки и gif*/
+    width: 1250px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.content ul li a { /*ссылки в многоуровневом списке*/
+    font-family: Arial Black;
+    color: rgb(0, 41, 68);
+    font-size: 50px;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.back { /*кнопка "назад"*/
+    font-family: Arial Black;
+    color: white;
+    background-color: rgb(0, 41, 68);
+    font-size: 50px;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: filter 0.3s ease;
+    border-radius: 20px;
+}
+
+.back:hover { /*анимеция кнопки "назад"*/
+    filter: brightness(80%);
+}
+
+table { /*таблица*/
+    border-collapse: collapse;
+    color: rgb(0, 41, 68);
+    width: 100%;
+    margin: 20px 0;
+    font-family: Arial Black;
+}
+
+th, td {
+    border: 3px solid rgb(0, 41, 68);
+    padding: 8px;
+    text-align: center;
+    vertical-align: top;
+}
+th {
+    font-weight: bold;
+}
